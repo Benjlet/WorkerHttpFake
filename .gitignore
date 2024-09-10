@@ -1,0 +1,5 @@
+.vs/
+bin/
+obj/
+serviceDependencies.local.json
+serviceDependencies.local.json.user
