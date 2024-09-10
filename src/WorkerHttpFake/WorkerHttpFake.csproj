@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<PackageId>WorkerHttpFake</PackageId>
+		<PackageVersion>1.0.0</PackageVersion>
+		<Authors>Benjlet</Authors>
+		<Company>Benjlet</Company>
+		<RepositoryType>git</RepositoryType>
+		<RepositoryUrl>https://github.com/Benjlet/WorkerHttpFake</RepositoryUrl>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageTags>unittest;isolated;worker;azure;moq;http;httprequestdata</PackageTags>
+		<PackageProjectUrl>https://github.com/Benjlet/WorkerHttpFake</PackageProjectUrl>
+		<Description>Fake test data builder for HttpRequestData objects.</Description>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<PackageIcon>icon.png</PackageIcon>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="icon.png" Pack="true" PackagePath="" />
+		<None Include="README.md" Pack="true" PackagePath="" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Azure.Functions.Worker" Version="1.23.0" />
+		<PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.Http" Version="3.2.0" />
+		<PackageReference Include="Moq" Version="4.20.72" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+	</ItemGroup>
+
+</Project>
